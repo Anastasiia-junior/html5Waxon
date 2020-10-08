@@ -71,6 +71,22 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.button {
+  background-color: #998675;
+  display: block;
+  padding: 20px 35px 20px 35px;
+  border-radius: 4px;
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .button:hover {
+    background-color: #c7b299; }
+  .button:active {
+    opacity: 0.5; }
+
 .main-header {
   background-image: url(../img/bg_photo_11949.jpg);
   background-repeat: no-repeat;
@@ -192,13 +208,84 @@ html {
 .slider {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 150px 40px 150px; }
+
+.slider-button {
+  border: none;
+  outline: none;
+  background-color: transparent; }
+  .slider-button:hover {
+    cursor: pointer; }
+  .slider-button .slider-buttton--back {
+    fill: #ffffff; }
+  .slider-button .slider-buttton--next {
+    fill: #ffffff;
+    transform: rotate(180deg); }
+
+.slider__text {
+  width: 589px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .slider__text .slider-text__header {
+    font-family: Raleway;
+    font-size: 58px;
+    line-height: 52px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+    padding: 0;
+    order: 2; }
+  .slider__text span {
+    font-family: Raleway;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    order: 1; }
+  .slider__text p {
+    font-family: Montserrat;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    padding: 0;
+    text-align: center;
+    order: 3; }
+  .slider__text .button {
+    order: 4; }
 
 .pagination {
   width: 100%;
-  margin: 0 auto;
+  margin: 300px auto 0 auto;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; }
+  .pagination .pagination-button {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+    background-color: #998675;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+    padding: 0; }
+    .pagination .pagination-button:hover {
+      cursor: pointer;
+      background-color: #998675; }
+    .pagination .pagination-button:active {
+      border: none;
+      outline: none; }
+  .pagination .pagination-button--active {
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    border: 2px solid #998675;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

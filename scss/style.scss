@@ -40,6 +40,27 @@ html {
     overflow: hidden;
 }
 
+.button {
+    background-color: $background-color--buton;
+    display: block;
+    padding: 20px 35px 20px 35px;
+    border-radius: 4px;
+
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 800;
+    color: $background-color;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
 .main-header {
     background-image: url(../img/bg_photo_11949.jpg);
     background-repeat: no-repeat;
@@ -77,14 +98,14 @@ html {
     box-sizing: border-box;
 
     &:hover {
-        color: #c7b299;
+        color: $hover-color;
     }
     &:active {
         opacity: 0.5;
     }
 
     &:hover .main-logo-svg {
-        fill: #c7b299;
+        fill: $hover-color;
         opacity: 0.5;
     }
 
@@ -122,10 +143,10 @@ html {
     font-weight: 300;
     margin: 0 30px 0 0;
     &.link-active {
-        color: #c7b299;
+        color: $hover-color;
     }
     &:hover {
-        color: #c7b299;
+        color:$hover-color;
     }
     &:active {
         opacity: 0.5;
@@ -140,7 +161,7 @@ html {
         fill: #ffffff;
     }
     &:hover svg {
-        fill: #c7b299;
+        fill: $hover-color;
     }
     &:active svg {
         opacity: 0.5;
@@ -161,7 +182,7 @@ html {
     box-sizing: border-box;
     fill: #ffffff;
     &:hover .search-form__svg {
-        fill:  #c7b299;
+        fill: $hover-color;
     }
     &:active .search-form__svg{
         opacity: 0.5;
@@ -203,13 +224,110 @@ html {
 .slider {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: 0 150px 40px 150px;
+}
+
+.slider-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+    .slider-buttton--back {
+        fill: $background-color;
+    }
+    .slider-buttton--next {
+        fill: $background-color;
+        transform: rotate(180deg);
+    }
+}
+
+.slider__text {
+    width: 589px;
+    box-sizing: border-box;
+    color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .slider-text__header {
+        font-family: Raleway;
+        font-size: 58px;
+        line-height: 52px;
+        font-weight: 800;
+
+        margin: 0 0 15px 0;
+        padding: 0;
+
+        order: 2;
+    }
+
+    span {
+        font-family: Raleway;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 500;
+
+        margin: 0 0 10px 0;
+
+        order: 1;
+    }
+
+    p {
+        font-family: Montserrat;
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 300;
+
+        margin: 0 0 50px 0;
+        padding: 0;
+        text-align: center;
+
+        order: 3;
+    }
+
+    .button {
+        order: 4;
+    }
 }
 
 .pagination {
     width: 100%;
-    margin: 0 auto;
+    margin: 300px auto 0 auto;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    .pagination-button {
+        width: 11px;
+        height: 11px;
+        border: none;
+        border-radius: 50%;
+        background-color: $background-color--buton;
+        margin: 0 10px 0 0;
+        box-sizing: border-box;
+        padding: 0;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $background-color--buton;
+        }
+
+        &:active {
+            border: none;
+            outline: none;
+            //разобраться почему при нажатии появляется граница
+        }
+    }
+    .pagination-button--active {
+        width: 11px;
+        height: 11px;
+        background-color: transparent;
+        border: 2px solid $background-color--buton;
+        border-radius: 50%;
+    }
 }
