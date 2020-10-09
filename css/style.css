@@ -344,7 +344,7 @@ html {
   padding: 85px 0 0 0;
   background-image: url(../img/browser_center_10768.jpg), url(../img/browser_left_10769.jpg), url(../img/browser_right_10770.jpg);
   background-repeat: no-repeat;
-  background-position: center 61%, 32% 67%, 69% 67%;
+  background-position: center 61%, 32% 68%, 69% 68%;
   background-size: auto; }
   .aside .wrapper {
     width: 1230px;
@@ -358,7 +358,8 @@ html {
     padding: 48px 0 48px 0; }
     .aside footer .wrapper {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin: 0 auto; }
 
 .aside__title {
   font-size: 30px;
@@ -366,12 +367,12 @@ html {
   font-weight: 600;
   color: #555555;
   padding: 0;
-  margin: 0 auto 522px auto; }
+  margin: 0 auto 30px auto; }
 
 .aside__text {
   width: 757px;
   padding: 0;
-  margin: 0 0 522px 0;
+  margin: 0 auto 522px auto;
   font-family: Montserrat;
   font-size: 18px;
   line-height: 28px;
@@ -489,10 +490,6 @@ html {
     line-height: 20px;
     font-weight: 300;
     color: #d1d1d1; }
-  .projects__card:nth-child(2) p {
-    background-color: #362f2d; }
-    .projects__card:nth-child(2) p .card-title {
-      color: #ffffff; }
   .projects__card p {
     margin: 0;
     padding: 30px 0 30px 30px;
@@ -508,5 +505,61 @@ html {
       border-bottom: 10px solid #fbfaf8;
       top: -10px;
       left: 19px; }
+
+.bg-video {
+  width: 1920px;
+  margin: 0 auto;
+  min-height: 705px;
+  position: relative;
+  background-color: #4e3427;
+  box-sizing: border-box; }
+
+.bg-video__file {
+  width: inherit;
+  height: 705px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: none; }
+
+.bg-video__text {
+  width: 552px;
+  position: absolute;
+  top: 31%;
+  left: 38%;
+  color: #ffffff;
+  text-align: center; }
+  .bg-video__text .bg-video__title {
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0 0 29px 0;
+    padding: 0; }
+  .bg-video__text .bg-video__description {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    margin: 0 0 40px 0;
+    padding: 0; }
+
+.wrapper--video-button {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  opacity: 0.2;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 11px;
+  margin: 0 auto 44px auto;
+  box-sizing: border-box; }
+  .wrapper--video-button svg {
+    fill: #ffffff;
+    width: 80px;
+    height: 76px;
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
