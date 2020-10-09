@@ -695,3 +695,122 @@ html {
         opacity: 1;
     }
 }
+
+.features {
+    width: 1920px;
+    background-color: #211b19;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 69px 0 70px 0;
+}
+
+.features__list {
+    width: $container;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //font-family: "montserrat";
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+
+    svg {
+        fill: #c7b299;
+        margin: 0 0 30px 0;
+    }
+
+    span {
+        display: block;
+        color: #c7b299;
+        //font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 30px 0;
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+}
+
+
+.partners {
+    width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(../img/bg_partners.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+} 
+
+.partners__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 140px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $container;
+    box-sizing: border-box;
+}
+
+.partners__item {
+    padding: 0;
+}
+
+
+
+
+.main-footer__bottom {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #111111;
+}
+
+.main-footer__wrapper {
+    width: $container;
+    margin: 0 auto;
+    padding: 45px 30px 52px 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+.main-footer__policy-list {
+    display: flex;
+    list-style: none;
+}
+
+.main-footer__design-list {
+    display: flex;
+    list-style: none;
+}
