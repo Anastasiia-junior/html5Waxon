@@ -640,6 +640,7 @@ html {
     object-fit: cover;
     box-sizing: border-box;
     border: none;
+    display: block;
 }
 
 .bg-video__text {
@@ -693,6 +694,69 @@ html {
         width: 80px;
         height: 76px;
         opacity: 1;
+    }
+}
+
+
+.details {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 195px 0 183px 877px;
+    box-sizing: border-box;
+    
+    background-image: url(../img/iphone_in_hand_10962.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% bottom;
+    background-size: auto;
+}
+
+.details__title {
+    margin: 0 0 40px 0;
+    padding: 0;
+    color: #555555;
+    font-family: "raleway-bold";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.details__text {
+    width: 657px;
+    margin: 0 0 45px 0;
+    padding: 0;
+    color: #8c8c8c;
+    font-family: "montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.details__list {
+    margin: 0 0 0 100px;
+    padding: 0;
+    width: 546px;
+    color: #8c8c8c;
+    font-family: "montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+    list-style: none;
+    box-sizing: border-box;
+
+    summary {
+        border: none;
+        outline: none;
     }
 }
 
@@ -757,6 +821,137 @@ html {
     }
 }
 
+.posts {
+    width: $container;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.posts__title {
+    color: #555555;
+    font-family: "raleway-bold";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+
+    margin: 0 auto 30px auto;
+}
+
+.posts__text {
+    width: 757px;
+    color: #8c8c8c;
+    font-family: "montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+
+    margin: 0 auto 40px auto;
+    padding: 0;
+}
+
+.posts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+.post {
+    width: 370px;
+    border: 1px solid #f8f8f8;
+
+    .post__img {
+        margin: 0 0 30px 0;
+        padding: 0;
+        width: inherit;
+        box-sizing: border-box;
+
+        img {
+            display: block;
+        }
+    }
+
+    figcaption {
+        color: #555555;
+        font-family: "raleway-bold";
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        margin: 0 0 20px 0;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
+
+.post-excerpt {
+    margin: 0 0 27px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+    color: #8c8c8c;
+    font-family: "montserrat";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+
+.post__link {
+    display: block;
+    margin: 0 0 33px 0;
+    padding: 0 30px;
+
+    color: #c7b299;
+    font-family: "montserratlight";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/arrow-link.svg);
+
+        width: 5px;
+        height: 8px;
+
+        top: 5px;
+        left: 113px;
+    }
+}
+
+.posts__controls {
+    display: flex;
+    justify-content: center;
+
+    .control-back,
+    .control-next {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        margin: 0 8px 0 0;
+        svg {
+            fill: #c7b299;
+        }
+    }
+}
 
 .partners {
     width: 1920px;
