@@ -33,6 +33,17 @@
 }
 
 
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 
 @font-face {
     font-family: 'raleway-bold';
