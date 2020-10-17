@@ -46,7 +46,7 @@ html {
     padding: 20px 35px 20px 35px;
     border-radius: 3px;
 
-    //font-family: "raleway";
+    font-family: "raleway-extrabold";
     font-size: 18px;
     line-height: 23px;
     font-weight: 800;
@@ -85,7 +85,7 @@ html {
     height: 56px;
     margin: 0 215px 0 0;
 
-    font-family: "raleway", "Open Sans", "sans-serif";
+    font-family: "raleway-regular";
     font-size: 34px;
     line-height: 1.2;
     font-weight: 400;
@@ -137,7 +137,7 @@ html {
 .main-nav__link {
     list-style-type: none;
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: "montserratlight";
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
@@ -255,7 +255,7 @@ html {
     align-items: center;
 
     .slider-text__header {
-        font-family: "raleway";
+        font-family: "raleway-extrabold";
         font-size: 58px;
         line-height: 52px;
         font-weight: 800;
@@ -267,7 +267,7 @@ html {
     }
 
     span {
-        font-family: raleway;
+        font-family: "raleway-medium";
         font-size: 42px;
         line-height: 1.2;
         font-weight: 500;
