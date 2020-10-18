@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url("../fonts/raleway-semibold.eot");
+  src: url("../fonts/raleway-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-semibold.woff2") format("woff2"), url("../fonts/raleway-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-bold';
+  src: url("../fonts/raleway-bold.eot");
+  src: url("../fonts/raleway-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: url("../fonts/raleway-extrabold.eot");
+  src: url("../fonts/raleway-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway-extrabold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-medium';
+  src: url("../fonts/raleway-medium.eot");
+  src: url("../fonts/raleway-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-medium.woff2") format("woff2"), url("../fonts/raleway-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-regular';
+  src: url("../fonts/raleway-regular.eot");
+  src: url("../fonts/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway-light.eot");
+  src: url("../fonts/raleway-light.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light.woff2") format("woff2"), url("../fonts/raleway-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.bg-video {
+  width: 1920px;
+  margin: 0 auto;
+  min-height: 705px;
+  position: relative;
+  background-color: #4e3427;
+  box-sizing: border-box; }
+
+.bg-video__file {
+  width: inherit;
+  height: 705px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: none;
+  display: block; }
+
+.bg-video__text {
+  width: 552px;
+  position: absolute;
+  top: 31%;
+  left: 38%;
+  color: #ffffff;
+  text-align: center; }
+  .bg-video__text .bg-video__title {
+    font-family: "raleway-medium";
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0 0 29px 0;
+    padding: 0; }
+  .bg-video__text .bg-video__description {
+    font-family: "montserratlight";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    margin: 0 0 40px 0;
+    padding: 0; }
+
+.wrapper--video-button {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 11px;
+  margin: 0 auto 44px auto;
+  box-sizing: border-box; }
+  .wrapper--video-button svg {
+    fill: #ffffff;
+    width: 80px;
+    height: 76px;
+    opacity: 1; }
+
+/*# sourceMappingURL=video.css.map */

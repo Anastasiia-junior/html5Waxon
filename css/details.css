@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url("../fonts/raleway-semibold.eot");
+  src: url("../fonts/raleway-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-semibold.woff2") format("woff2"), url("../fonts/raleway-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-bold';
+  src: url("../fonts/raleway-bold.eot");
+  src: url("../fonts/raleway-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: url("../fonts/raleway-extrabold.eot");
+  src: url("../fonts/raleway-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway-extrabold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-medium';
+  src: url("../fonts/raleway-medium.eot");
+  src: url("../fonts/raleway-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-medium.woff2") format("woff2"), url("../fonts/raleway-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-regular';
+  src: url("../fonts/raleway-regular.eot");
+  src: url("../fonts/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway-light.eot");
+  src: url("../fonts/raleway-light.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light.woff2") format("woff2"), url("../fonts/raleway-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.details {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 195px 0 183px 877px;
+  box-sizing: border-box;
+  background-image: url(../img/iphone_in_hand_10962.jpg);
+  background-repeat: no-repeat;
+  background-position: 25% bottom;
+  background-size: auto; }
+
+.details__title {
+  margin: 0 0 40px 0;
+  padding: 0;
+  color: #555555;
+  font-family: "raleway-regular";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  box-sizing: border-box; }
+
+.details__text {
+  width: 657px;
+  margin: 0 0 45px 0;
+  padding: 0;
+  color: #8c8c8c;
+  font-family: "montserratlight";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  box-sizing: border-box; }
+
+.details__list {
+  margin: 0 0 0 100px;
+  padding: 0;
+  width: 546px;
+  color: #8c8c8c;
+  font-family: "montserratlight";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  list-style: none;
+  box-sizing: border-box; }
+  .details__list summary {
+    border: none;
+    outline: none; }
+
+/*# sourceMappingURL=details.css.map */

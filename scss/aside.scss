@@ -1,0 +1,86 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+.aside {
+    background-color: #fbfaf8;
+    padding: 85px 0 0 0;
+    background-image: url(../img/browser_center_10768.jpg),
+                        url(../img/browser_left_10769.jpg),
+                        url(../img/browser_right_10770.jpg);
+    background-repeat: no-repeat;
+    background-position: center 61%, 32% 68%, 69% 68%;
+    background-size: auto;
+    .wrapper {
+        width: $container;
+        margin: 0 auto ;
+        padding: 0 30px 0 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    footer {
+        background-color: #f4f5f8;
+        background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+        padding: 48px 0 48px 0;
+        .wrapper {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.aside__title {
+    font-family: "raleway-semibold";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    padding: 0;
+    margin: 0 auto 30px auto;
+}
+
+.aside__text {
+    width: 757px;
+    padding: 0;
+    margin: 0 auto 522px auto;
+    font-family: "montserratlight";
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.aside__footer-text {
+    text-align: left;
+
+    .aside__footer-title {
+        font-family: "raleway-regular";
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        span {
+            font-family: "raleway-light";
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #c7b299;
+        }
+    }
+
+    .aside__footer-description {
+        margin: 0;
+        padding: 0;
+        font-family: "montserratlight";
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #615855;
+    }
+
+    & + a {
+        margin: 0 0 0 auto;
+    }
+}

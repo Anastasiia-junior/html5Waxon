@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url("../fonts/raleway-semibold.eot");
+  src: url("../fonts/raleway-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-semibold.woff2") format("woff2"), url("../fonts/raleway-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-bold';
+  src: url("../fonts/raleway-bold.eot");
+  src: url("../fonts/raleway-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: url("../fonts/raleway-extrabold.eot");
+  src: url("../fonts/raleway-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold.woff2") format("woff2"), url("../fonts/raleway-extrabold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-medium';
+  src: url("../fonts/raleway-medium.eot");
+  src: url("../fonts/raleway-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-medium.woff2") format("woff2"), url("../fonts/raleway-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-regular';
+  src: url("../fonts/raleway-regular.eot");
+  src: url("../fonts/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway-light.eot");
+  src: url("../fonts/raleway-light.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light.woff2") format("woff2"), url("../fonts/raleway-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.posts {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 80px 30px; }
+
+.posts__title {
+  color: #555555;
+  font-family: "raleway-bold";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  margin: 0 auto 30px auto; }
+
+.posts__text {
+  width: 757px;
+  color: #8c8c8c;
+  font-family: "montserratlight";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  padding: 0; }
+
+.posts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 40px 0; }
+
+.post {
+  width: 370px;
+  border: 1px solid #f8f8f8; }
+  .post .post__img {
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: inherit;
+    box-sizing: border-box; }
+    .post .post__img img {
+      display: block; }
+  .post figcaption {
+    color: #555555;
+    font-family: "raleway-bold";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0 30px;
+    box-sizing: border-box; }
+
+.post-excerpt {
+  margin: 0 0 27px 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: #8c8c8c;
+  font-family: "montserratlight";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: left; }
+
+.post__link {
+  display: block;
+  margin: 0 0 33px 0;
+  padding: 0 30px;
+  color: #c7b299;
+  font-family: "montserratlight";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  position: relative; }
+  .post__link::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/arrow-link.svg);
+    width: 5px;
+    height: 8px;
+    top: 5px;
+    left: 113px; }
+
+.posts__controls {
+  display: flex;
+  justify-content: center; }
+  .posts__controls .control-back,
+  .posts__controls .control-next {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 8px 0 0; }
+    .posts__controls .control-back svg,
+    .posts__controls .control-next svg {
+      fill: #c7b299; }
+
+/*# sourceMappingURL=posts.css.map */

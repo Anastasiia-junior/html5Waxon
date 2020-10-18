@@ -1,0 +1,372 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+.main-footer__content {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #191919;
+}
+
+.main-footer__content-wrapper {
+    width: $container;
+    margin: 0 auto;
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+.waxom-preview {
+    width: 258px;
+    margin: 0 40px 0 0;
+}
+
+.waxom-preview__text {
+    margin: 30px 0;
+    padding: 0;
+
+    color: #555555;
+    font-family: "montserratlight";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+}
+
+.waxom-preview__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    color: #d1d1d1;
+    font-family: "montserratlight";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/arrow-link.svg);
+
+        width: 5px;
+        height: 8px;
+
+        top: 3px;
+        left: 83px;
+    }
+}
+
+.footer-posts {
+    width: 270px;
+    margin: 0 30px 0 0;
+    box-sizing: border-box;
+}
+
+.footer-posts__title {
+    color: #ffffff;
+    font-family: "raleway-bold";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    box-sizing: border-box;
+
+    margin: 0 0 13px 0;
+    padding: 0;
+}
+
+.footer-posts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-posts__item {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #252525;
+    width: inherit;
+    box-sizing: border-box;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.footer-posts__link {
+    .footer-posts__time {
+        color: #555555;
+        opacity: 0.5;
+        font-family: "montserratlight";
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: left;
+    }
+    
+    .footer-posts__text {
+        color: #555555;
+        font-family: "montserratlight";
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        display: block;
+        -webkit-hyphens: none;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: manual;
+    }
+
+    &:hover .footer-posts__time{
+        color: #ffffff;
+        opacity: 1;
+    }
+    &:hover .footer-posts__text {
+        color: #c7b299;
+    }
+}
+
+
+//footer-twitter 
+
+.footer-twitter {
+    width: 270px;
+    box-sizing: border-box;
+    margin: 0 30px 0 0;
+}
+
+.footer-twitter__title {
+    padding: 0;
+    margin: 0 0 10px 0;
+
+    color: #ffffff;
+    font-family: "raleway-bold";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.footer-twitter__list {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-twitter__item {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #252525;
+    width: inherit;
+    box-sizing: border-box;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.footer-twitter__link {
+    .footer-twitter__text {
+        display: block;
+        box-sizing: border-box;
+        color: #555555;
+        font-family: "montserratlight";
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: left;
+    }
+    
+    .footer-twitter__time {
+        color: #363636;
+        font-family: "montserratlight";
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .twit {
+        color: #00bff3;
+    }
+
+    .twitt-code {
+        color: #959595;
+    }
+
+    &:hover .footer-twitter__time{
+        color: #ffffff;
+        opacity: 1;
+    }
+    &:hover .footer-twitter__text {
+        color: #c7b299;
+    }
+}
+
+
+//bridget widget
+
+.widgets {
+    width: 270px;
+    box-sizing: border-box;
+}
+
+.widgets__title {
+    color: #ffffff;
+    font-family: "raleway-bold";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+.widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widgets__link {
+    margin: 0 0 10px 0;
+}
+
+.widgets__pic {
+    display: block;
+    width: 130px;
+    height: 98px;
+}
+
+
+//main footer bottom
+
+.main-footer__bottom {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #111111;
+}
+
+.main-footer__bottom-wrapper {
+    width: $container;
+    margin: 0 auto;
+    padding: 45px 30px 52px 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+.main-footer__policy-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer__policy-item{
+    margin: 0 10px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    &:last-child .main-footer__policy-link {
+        border: none;
+    }
+}
+
+.main-footer__policy-link {
+    display: block;
+    padding: 0 10px 0 0;
+
+    border-right: 1px solid  #252525;
+    box-sizing: border-box;
+
+    color: #555555;
+    font-family: "montserratlight";
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+
+    span {
+        color: #c7b299;
+        font-size: 14px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.main-footer__design-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer__design-item {
+    margin: 0 10px 0 0;
+    &:last-child .main-footer__design-link {
+        border: none;
+    }
+}
+
+.main-footer__design-link {
+    display: block;
+    padding: 0 10px 0 0;
+
+    border-right: 1px solid  #252525;
+    box-sizing: border-box;
+
+    color:#555555;
+    font-family: "montserratlight";
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+
+    span {
+        color: #959595;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
