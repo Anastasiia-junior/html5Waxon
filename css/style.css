@@ -52,7 +52,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "monserat", Verdana, "sans-serif";
+  font-family: "raleway", "Open Sans", "sans-serif";
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -86,12 +86,12 @@ html {
 .button {
   background-color: #998675;
   display: block;
-  padding: 20px 35px 20px 35px;
+  padding: 20px 30px;
   border-radius: 3px;
-  font-family: "raleway-extrabold";
-  font-size: 18px;
+  font-family: "raleway-bold";
+  font-size: 14px;
   line-height: 23px;
-  font-weight: 800;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase; }
   .button:hover {
@@ -102,6 +102,7 @@ html {
 .main-header {
   background-image: url(../img/bg_photo_11949.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 1920px;
   margin: 0 auto;
   background-color: rgba(17, 17, 17, 0.7);
@@ -141,7 +142,6 @@ html {
     fill: #ffffff; }
 
 .main-nav {
-  width: 637px;
   box-sizing: border-box; }
 
 .main-nav__list {
@@ -151,14 +151,21 @@ html {
   box-sizing: border-box;
   list-style: none; }
 
+.main-nav__item {
+  margin: 0 30px 0 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .main-nav__item:last-child {
+    margin: 0; }
+
 .main-nav__link {
+  display: block;
   list-style-type: none;
   color: #ffffff;
   font-family: "montserratlight";
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 300;
-  margin: 0 30px 0 0; }
+  font-weight: 300; }
   .main-nav__link.link-active {
     color: #c7b299; }
   .main-nav__link:hover {
@@ -204,7 +211,7 @@ html {
   box-sizing: border-box;
   background-color: transparent;
   position: absolute;
-  top: 0;
+  top: 32px;
   left: -7px;
   color: #555555;
   font-size: 16px;
@@ -231,6 +238,10 @@ html {
   background-color: transparent; }
   .slider-button:hover {
     cursor: pointer; }
+    .slider-button:hover svg {
+      fill: #c7b299; }
+  .slider-button:active svg {
+    opacity: 0.5; }
   .slider-button .slider-buttton--back {
     fill: #ffffff; }
   .slider-button .slider-buttton--next {
@@ -246,7 +257,7 @@ html {
   align-items: center; }
   .slider__text .slider-text__header {
     font-family: "raleway-extrabold";
-    font-size: 58px;
+    font-size: 52px;
     line-height: 52px;
     font-weight: 800;
     margin: 0 0 15px 0;
@@ -254,14 +265,14 @@ html {
     order: 2; }
   .slider__text span {
     font-family: "raleway-medium";
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1.2;
     font-weight: 500;
     margin: 0 0 10px 0;
     order: 1; }
-  .slider__text p {
-    font-family: Montserrat;
-    font-size: 19px;
+  .slider__text .slider-description {
+    font-family: "montserratlight";
+    font-size: 16px;
     line-height: 24px;
     font-weight: 300;
     margin: 0 0 50px 0;
@@ -279,26 +290,29 @@ html {
   display: flex;
   justify-content: center; }
   .pagination .pagination-control {
+    display: block;
     width: 11px;
     height: 11px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 50%;
     background-color: #998675;
-    margin: 0 10px 0 0;
     box-sizing: border-box;
-    padding: 0; }
+    padding: 0;
+    margin: 0 10px 0 0; }
     .pagination .pagination-control:hover {
-      cursor: pointer;
-      background-color: #998675; }
+      background-color: transparent;
+      border: 2px solid #d3c1ad;
+      transform: scale(1.2); }
     .pagination .pagination-control:active {
       border: none;
       outline: none; }
   .pagination .pagination-control--active {
-    width: 11px;
-    height: 11px;
     background-color: transparent;
     border: 2px solid #998675;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+    transform: scale(1.2); }
 
 .benefits {
   width: 1230px;
@@ -328,13 +342,14 @@ html {
     fill: #555555;
     margin: 0 0 30px 0; }
   .benefits__item .benefits__title {
+    font-family: "raleway-bold";
     font-size: 22px;
     line-height: 1.2;
     font-weight: 700;
     color: #555555;
     margin: 0 0 20px 0; }
   .benefits__item .benefits__text {
-    font-family: Montserrat;
+    font-family: "montserratlight";
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -347,7 +362,7 @@ html {
     background-color: #f1eee9; }
   .benefits__item:hover .benefits__icon {
     fill: #c7b299; }
-  .benefits__item:hover .benefits__title, .benefits__item:hover .benefits__text {
+  .benefits__item:hover .benefits__title {
     color: #c7b299; }
   .benefits__item:hover::after {
     background-color: #c7b299; }
@@ -375,6 +390,7 @@ html {
       margin: 0 auto; }
 
 .aside__title {
+  font-family: "raleway-semibold";
   font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
@@ -386,7 +402,7 @@ html {
   width: 757px;
   padding: 0;
   margin: 0 auto 522px auto;
-  font-family: Montserrat;
+  font-family: "montserratlight";
   font-size: 18px;
   line-height: 28px;
   font-weight: 300;
@@ -395,6 +411,7 @@ html {
 .aside__footer-text {
   text-align: left; }
   .aside__footer-text .aside__footer-title {
+    font-family: "raleway-regular";
     margin: 0 0 5px 0;
     padding: 0;
     font-size: 28px;
@@ -402,6 +419,7 @@ html {
     font-weight: 400;
     color: #ffffff; }
     .aside__footer-text .aside__footer-title span {
+      font-family: "raleway-light";
       font-size: 28px;
       line-height: 1.2;
       font-weight: 300;
@@ -409,6 +427,7 @@ html {
   .aside__footer-text .aside__footer-description {
     margin: 0;
     padding: 0;
+    font-family: "montserratlight";
     font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
@@ -427,6 +446,7 @@ html {
     width: inherit;
     box-sizing: border-box;
     text-align: center;
+    font-family: "raleway-semibold";
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
@@ -435,6 +455,7 @@ html {
     width: 757px;
     margin: 0 auto 40px auto;
     text-align: center;
+    font-family: "montserratlight";
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -449,7 +470,8 @@ html {
   width: 757px;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .projects-filter__button {
   border: 1px solid #ebebeb;
@@ -458,6 +480,8 @@ html {
   background-color: #ffffff;
   padding: 10px 25px;
   margin: 0 0 40px 0;
+  box-sizing: border-box;
+  font-family: "montserratlight";
   font-size: 14px;
   line-height: 21px;
   font-weight: 300;
@@ -466,7 +490,8 @@ html {
     cursor: pointer;
     background-color: #c7b299;
     color: #ffffff;
-    border: none; }
+    border: 1px solid #c7b299;
+    box-sizing: border-box; }
   .projects-filter__button:active {
     background-color: #998675;
     color: #ffffff;
@@ -484,25 +509,10 @@ html {
 .projects__card {
   width: 370px;
   box-sizing: border-box;
-  margin: 0 30px 30px 0; }
+  margin: 0 30px 30px 0;
+  position: relative; }
   .projects__card:nth-child(3n) {
     margin: 0 0 30px 0; }
-  .projects__card img {
-    width: 370px;
-    height: 237px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; }
-  .projects__card .card-title {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #c7b299; }
-  .projects__card .card-text {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    color: #d1d1d1; }
   .projects__card p {
     margin: 0;
     padding: 30px 0 30px 30px;
@@ -518,6 +528,76 @@ html {
       border-bottom: 10px solid #fbfaf8;
       top: -10px;
       left: 19px; }
+  .projects__card:hover p {
+    background-color: #362f2d; }
+    .projects__card:hover p:before {
+      border-bottom: 10px solid #362f2d; }
+  .projects__card:hover .card-title {
+    color: #ffffff; }
+  .projects__card:hover .card-text {
+    color: #c7b299; }
+  .projects__card:hover .projects__card--hover {
+    display: block; }
+
+.card__pic {
+  display: block;
+  width: 370px;
+  height: 237px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.card-title {
+  font-family: "raleway-medium";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299; }
+
+.card-text {
+  font-family: "montserratlight";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1; }
+
+.projects__card--hover {
+  display: none;
+  position: absolute;
+  width: 370px;
+  height: 237px;
+  background-color: rgba(17, 17, 17, 0.7);
+  top: 0;
+  left: 0; }
+  .projects__card--hover .hover-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 26px;
+    height: 26px;
+    box-sizing: border-box; }
+
+.hover-link {
+  background-image: url(../img/link-hover.svg);
+  background-repeat: no-repeat;
+  margin: 0 25px 0 0;
+  position: absolute;
+  top: 50%;
+  left: 36%; }
+  .hover-link:hover {
+    cursor: pointer;
+    transform: scale(1.2); }
+
+.hover-lupa {
+  background-image: url(../img/lupa-hover.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+  .hover-lupa:hover {
+    cursor: pointer;
+    transform: scale(1.2); }
 
 .bg-video {
   width: 1920px;
@@ -543,6 +623,7 @@ html {
   color: #ffffff;
   text-align: center; }
   .bg-video__text .bg-video__title {
+    font-family: "raleway-medium";
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -551,6 +632,7 @@ html {
     margin: 0 0 29px 0;
     padding: 0; }
   .bg-video__text .bg-video__description {
+    font-family: "montserratlight";
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -590,7 +672,7 @@ html {
   margin: 0 0 40px 0;
   padding: 0;
   color: #555555;
-  font-family: "raleway-bold";
+  font-family: "raleway-regular";
   font-size: 30px;
   font-weight: 400;
   font-style: normal;
@@ -604,7 +686,7 @@ html {
   margin: 0 0 45px 0;
   padding: 0;
   color: #8c8c8c;
-  font-family: "montserrat";
+  font-family: "montserratlight";
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -618,7 +700,7 @@ html {
   padding: 0;
   width: 546px;
   color: #8c8c8c;
-  font-family: "montserrat";
+  font-family: "montserratlight";
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -651,6 +733,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "montserratregular";
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -664,6 +747,7 @@ html {
   .features__item span {
     display: block;
     color: #c7b299;
+    font-family: "montserratlight";
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -698,7 +782,7 @@ html {
 .posts__text {
   width: 757px;
   color: #8c8c8c;
-  font-family: "montserrat";
+  font-family: "montserratlight";
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -742,7 +826,7 @@ html {
   padding: 0 30px;
   box-sizing: border-box;
   color: #8c8c8c;
-  font-family: "montserrat";
+  font-family: "montserratlight";
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -806,8 +890,12 @@ html {
   width: 1230px;
   box-sizing: border-box; }
 
-.partners__item {
-  padding: 0; }
+.partners__link {
+  display: block; }
+  .partners__link:hover {
+    transform: scale(1.2); }
+  .partners__link:active {
+    opacity: 0.5; }
 
 .main-footer__content {
   width: 1920px;

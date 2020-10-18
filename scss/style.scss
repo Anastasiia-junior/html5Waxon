@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "monserat", Verdana, "sans-serif";
+    font-family: "raleway", "Open Sans", "sans-serif";
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -43,13 +43,13 @@ html {
 .button {
     background-color: $background-color--buton;
     display: block;
-    padding: 20px 35px 20px 35px;
+    padding: 20px 30px;
     border-radius: 3px;
 
-    font-family: "raleway-extrabold";
-    font-size: 18px;
+    font-family: "raleway-bold";
+    font-size: 14px;
     line-height: 23px;
-    font-weight: 800;
+    font-weight: 700;
     color: $background-color;
     text-transform: uppercase;
 
@@ -64,6 +64,7 @@ html {
 .main-header {
     background-image: url(../img/bg_photo_11949.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 1920px;
     margin: 0 auto;
     background-color: rgba(17,17,17,0.7);
@@ -121,7 +122,6 @@ html {
 }
 
 .main-nav {
-    width: 637px;
     box-sizing: border-box;
 }
 
@@ -133,15 +133,26 @@ html {
     list-style: none;
 }
 
+.main-nav__item {
+    margin: 0 30px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:last-child {
+        margin: 0;
+    }
+
+}
 
 .main-nav__link {
+    display: block;
     list-style-type: none;
     color: #ffffff;
     font-family: "montserratlight";
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
-    margin: 0 30px 0 0;
+    
     &.link-active {
         color: $hover-color;
     }
@@ -204,7 +215,7 @@ html {
     background-color: transparent;
 
     position: absolute;
-    top: 0;
+    top: 32px;
     left: -7px;
 
     color: $font-color;
@@ -236,7 +247,17 @@ html {
     background-color: transparent;
     &:hover {
         cursor: pointer;
+        svg {
+            fill: $hover-color;
+        }
     }
+
+    &:active {
+        svg {
+            opacity: 0.5;
+        }
+    }
+
     .slider-buttton--back {
         fill: $background-color;
     }
@@ -256,7 +277,7 @@ html {
 
     .slider-text__header {
         font-family: "raleway-extrabold";
-        font-size: 58px;
+        font-size: 52px;
         line-height: 52px;
         font-weight: 800;
 
@@ -268,7 +289,7 @@ html {
 
     span {
         font-family: "raleway-medium";
-        font-size: 42px;
+        font-size: 36px;
         line-height: 1.2;
         font-weight: 500;
 
@@ -277,9 +298,9 @@ html {
         order: 1;
     }
 
-    p {
-        font-family: Montserrat;
-        font-size: 19px;
+    .slider-description {
+        font-family: "montserratlight";
+        font-size: 16px;
         line-height: 24px;
         font-weight: 300;
 
@@ -304,18 +325,22 @@ html {
     justify-content: center;
 
     .pagination-control {
+        display: block;
         width: 11px;
         height: 11px;
-        border: none;
+
+        border: 2px solid transparent;
         border-radius: 50%;
         background-color: $background-color--buton;
-        margin: 0 10px 0 0;
+        
         box-sizing: border-box;
         padding: 0;
+        margin: 0 10px 0 0;
 
         &:hover {
-            cursor: pointer;
-            background-color: $background-color--buton;
+            background-color: transparent;
+            border: 2px solid #d3c1ad;
+            transform: scale(1.2);
         }
 
         &:active {
@@ -325,11 +350,12 @@ html {
         }
     }
     .pagination-control--active {
-        width: 11px;
-        height: 11px;
         background-color: transparent;
         border: 2px solid $background-color--buton;
         border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #d3c1ad;
+        transform: scale(1.2);
     }
 }
 
@@ -366,7 +392,7 @@ html {
     }
 
     .benefits__title {
-        //font-family: "raleway";
+        font-family: "raleway-bold";
         font-size: 22px;
         line-height: 1.2;
         font-weight: 700;
@@ -375,7 +401,7 @@ html {
     }
 
     .benefits__text {
-        font-family: Montserrat;
+        font-family: "montserratlight";
         font-size: 16px;
         line-height: 24px;
         font-weight: 300;
@@ -393,8 +419,7 @@ html {
     &:hover .benefits__icon {
         fill: $hover-color;
     }
-    &:hover .benefits__title,
-    &:hover .benefits__text {
+    &:hover .benefits__title {
         color: $hover-color;
     }
     &:hover::after {
@@ -431,7 +456,7 @@ html {
 }
 
 .aside__title {
-    //font-family: Raleway;
+    font-family: "raleway-semibold";
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
@@ -444,7 +469,7 @@ html {
     width: 757px;
     padding: 0;
     margin: 0 auto 522px auto;
-    font-family: Montserrat;
+    font-family: "montserratlight";
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
@@ -455,6 +480,7 @@ html {
     text-align: left;
 
     .aside__footer-title {
+        font-family: "raleway-regular";
         margin: 0 0 5px 0;
         padding: 0;
         font-size: 28px;
@@ -462,7 +488,7 @@ html {
         font-weight: 400;
         color: #ffffff;
         span {
-            //font-family: Raleway;
+            font-family: "raleway-light";
             font-size: 28px;
             line-height: 1.2;
             font-weight: 300;
@@ -473,7 +499,7 @@ html {
     .aside__footer-description {
         margin: 0;
         padding: 0;
-        //font-family: montserrat;
+        font-family: "montserratlight";
         font-size: 18px;
         line-height: 1.2;
         font-weight: 300;
@@ -498,7 +524,7 @@ html {
         box-sizing: border-box;
         text-align: center;
 
-        //font-family: Raleway;
+        font-family: "raleway-semibold";
         font-size: 30px;
         line-height: 1.2;
         font-weight: 600;
@@ -510,7 +536,7 @@ html {
         margin: 0 auto 40px auto;
         text-align: center;
 
-        //font-family: Montserrat;
+        font-family: "montserratlight";
         font-size: 16px;
         line-height: 28px;
         font-weight: 300;
@@ -530,6 +556,7 @@ html {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .projects-filter__button {
@@ -539,8 +566,9 @@ html {
     background-color: #ffffff;
     padding: 10px 25px;
     margin: 0 0 40px 0;
+    box-sizing: border-box;
 
-    //font-family: Montserrat;
+    font-family: "montserratlight";
     font-size: 14px;
     line-height: 21px;
     font-weight: 300;
@@ -550,7 +578,8 @@ html {
         cursor: pointer;
         background-color: $hover-color;
         color: #ffffff;
-        border: none;
+        border: 1px solid $hover-color;
+        box-sizing: border-box;
     }
     &:active {
         background-color: $background-color--buton;
@@ -576,35 +605,11 @@ html {
     box-sizing: border-box;
     margin: 0 30px 30px 0;
 
+    position: relative;
+
     &:nth-child(3n) {
         margin: 0 0 30px 0;
     }
-
-    img {
-        width: 370px;
-        height: 237px;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .card-title {
-        //font-family: Raleway;
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 500;
-        color: #c7b299;
-    }
-
-    .card-text {
-        //font-family: Montserrat;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 300;
-        color: #d1d1d1;
-    }
-
-    
 
     p {
         margin: 0;
@@ -622,6 +627,100 @@ html {
             top: -10px;
             left: 19px;
         }
+    }
+
+    &:hover p {
+        background-color: #362f2d;
+        &:before {
+            border-bottom: 10px solid #362f2d;
+        }
+    }
+    &:hover .card-title {
+        color: #ffffff;
+    }
+    &:hover .card-text {
+        color: #c7b299;
+    }
+
+    &:hover .projects__card--hover {
+        display: block;
+    }
+}
+
+.card__pic {
+    display: block;
+    width: 370px;
+    height: 237px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    font-family: "raleway-medium";
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+}
+
+.card-text {
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+.projects__card--hover {
+    display: none;
+    position: absolute;
+
+    width: 370px;
+    height: 237px;
+
+    background-color: rgba(17, 17, 17, 0.7);
+    //background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) );
+
+    top: 0;
+    left: 0;
+
+    .hover-button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 26px;
+        height: 26px;
+        box-sizing: border-box;
+    }
+}
+
+
+
+.hover-link {
+    background-image: url(../img/link-hover.svg);
+    background-repeat: no-repeat;
+    margin: 0 25px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 36%;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+.hover-lupa {
+    background-image: url(../img/lupa-hover.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
     }
 }
 
@@ -652,7 +751,7 @@ html {
     text-align: center;
 
     .bg-video__title {
-        //font-family: Raleway;
+        font-family: "raleway-medium";
         font-size: 30px;
         font-weight: 500;
         font-style: normal;
@@ -664,7 +763,7 @@ html {
     }
 
     .bg-video__description {
-        //font-family: Montserrat;
+        font-family: "montserratlight";
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
@@ -714,7 +813,7 @@ html {
     margin: 0 0 40px 0;
     padding: 0;
     color: #555555;
-    font-family: "raleway-bold";
+    font-family: "raleway-regular";
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
@@ -729,7 +828,7 @@ html {
     margin: 0 0 45px 0;
     padding: 0;
     color: #8c8c8c;
-    font-family: "montserrat";
+    font-family: "montserratlight";
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -744,7 +843,7 @@ html {
     padding: 0;
     width: 546px;
     color: #8c8c8c;
-    font-family: "montserrat";
+    font-family: "montserratlight";
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -784,7 +883,7 @@ html {
     flex-direction: column;
     align-items: center;
 
-    //font-family: "montserrat";
+    font-family: "montserratregular";
     font-size: 48px;
     font-weight: 400;
     font-style: normal;
@@ -801,7 +900,7 @@ html {
     span {
         display: block;
         color: #c7b299;
-        //font-family: Montserrat;
+        font-family: "montserratlight";
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
@@ -843,7 +942,7 @@ html {
 .posts__text {
     width: 757px;
     color: #8c8c8c;
-    font-family: "montserrat";
+    font-family: "montserratlight";
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -897,7 +996,7 @@ html {
     padding: 0 30px;
     box-sizing: border-box;
     color: #8c8c8c;
-    font-family: "montserrat";
+    font-family: "montserratlight";
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -974,8 +1073,16 @@ html {
     box-sizing: border-box;
 }
 
-.partners__item {
-    padding: 0;
+.partners__link {
+    display: block;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
 }
 
 
