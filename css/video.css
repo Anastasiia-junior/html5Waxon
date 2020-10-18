@@ -106,5 +106,11 @@
     width: 80px;
     height: 76px;
     opacity: 1; }
+  .wrapper--video-button:hover svg {
+    fill: #c7b299;
+    cursor: pointer; }
+
+.video-play-btn--hide {
+  display: none; }
 
 /*# sourceMappingURL=video.css.map */
