@@ -1448,6 +1448,10 @@
 .waxom-preview {
   width: 258px;
   margin: 0 40px 0 0; }
+  .waxom-preview:hover .waxom-preview__text {
+    color: #ffffff; }
+  .waxom-preview:hover .waxom-preview__link {
+    color: #c7b299; }
 
 .waxom-preview__text {
   margin: 30px 0;
@@ -1482,6 +1486,8 @@
     height: 8px;
     top: 3px;
     left: 83px; }
+  .waxom-preview__link:active {
+    opacity: 0.5; }
 
 .footer-posts {
   width: 270px;
@@ -1541,6 +1547,8 @@
   opacity: 1; }
 .footer-posts__link:hover .footer-posts__text {
   color: #c7b299; }
+.footer-posts__link:active .footer-posts__time, .footer-posts__link:active .footer-posts__text {
+  opacity: 0.5; }
 
 .footer-twitter {
   width: 270px;
@@ -1600,6 +1608,8 @@
   opacity: 1; }
 .footer-twitter__link:hover .footer-twitter__text {
   color: #c7b299; }
+.footer-twitter__link:active .footer-twitter__time, .footer-twitter__link:active .footer-twitter__text {
+  opacity: 0.5; }
 
 .widgets {
   width: 270px;
@@ -1623,7 +1633,22 @@
   justify-content: space-between; }
 
 .widgets__link {
-  margin: 0 0 10px 0; }
+  display: block;
+  margin: 0 0 10px 0;
+  position: relative; }
+  .widgets__link:hover .widgets-hover {
+    display: block; }
+  .widgets__link:active {
+    opacity: 0.5; }
+
+.widgets-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 98px;
+  background-color: rgba(17, 17, 17, 0.7); }
 
 .widgets__pic {
   display: block;
