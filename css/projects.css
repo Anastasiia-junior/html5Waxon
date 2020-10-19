@@ -57,7 +57,6 @@
   .projects .projects__title {
     margin: 0 0 24px 0;
     padding: 0;
-    width: inherit;
     box-sizing: border-box;
     text-align: center;
     font-family: "raleway-semibold";
@@ -162,11 +161,13 @@
   padding: 0; }
 
 .card-title {
+  display: block;
   font-family: "raleway-medium";
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
-  color: #c7b299; }
+  color: #c7b299;
+  margin: 0 0 14px 0; }
 
 .card-text {
   font-family: "montserratlight";

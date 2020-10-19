@@ -46,30 +46,113 @@
     width: 370px;
     border: 1px solid #f8f8f8;
 
-    .post__img {
-        margin: 0 0 30px 0;
-        padding: 0;
-        width: inherit;
-        box-sizing: border-box;
+    position: relative;
 
-        img {
-            display: block;
-        }
+    &:hover {
+        background-color: #362f2d;
+    }
+    
+    &:hover .hover-wrapper{
+        display: block;
     }
 
-    figcaption {
-        color: #555555;
-        font-family: "raleway-bold";
-        font-size: 20px;
-        font-weight: 500;
+    &:hover .day {
+        background-color: #c7b299;
+    }
+
+    &:hover .month {
+        background-color: #a48d72;
+    }
+
+    &:hover .img-caption {
+        color: #c7b299;
+    }
+
+    &:hover .post-excerpt {
+        color: #ffffff;
+    }
+}
+
+.hover-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 220px;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 50px;
+
+    .day {
+        padding: 10px;
+        background-color: #363636;
+
+        border-radius: 3px 3px 0 0;
+
+        color: #ffffff;
+        font-family: "montserratlight";
+        font-size: 24px;
+        font-weight: 300;
         font-style: normal;
         letter-spacing: normal;
-        line-height: normal;
-        text-align: left;
-        margin: 0 0 20px 0;
-        padding: 0 30px;
-        box-sizing: border-box;
+        line-height: 20px;
+        text-align: center;
     }
+
+    .month {
+        padding: 5px;
+
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: capitalize;
+
+        border-radius: 0 0 3px 3px;
+        background-color: #252525;
+    }
+}
+
+.post__img {
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: inherit;
+    box-sizing: border-box;
+
+    img {
+        display: block;
+        margin: 0 0 30px 0;
+        width: 370px;
+        height: 220px;
+    }
+}
+
+.img-caption {
+    display: block;
+
+    color: #555555;
+    font-family: "raleway-medium";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+
+    margin: 0 0 20px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .post-excerpt {
@@ -129,6 +212,15 @@
         margin: 0 8px 0 0;
         svg {
             fill: #c7b299;
+        }
+
+        &:hover svg {
+            fill: $hover-color;
+            transform: scale(1.2);
+        }
+
+        &:active svg {
+            opacity: 0.5;
         }
     }
 }

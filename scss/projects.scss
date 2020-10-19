@@ -10,7 +10,6 @@
     .projects__title {
         margin: 0 0 24px 0;
         padding: 0;
-        width: inherit;
         box-sizing: border-box;
         text-align: center;
 
@@ -147,11 +146,15 @@
 }
 
 .card-title {
+    display: block;
+
     font-family: "raleway-medium";
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     color: #c7b299;
+
+    margin: 0 0 14px 0;
 }
 
 .card-text {
@@ -170,7 +173,6 @@
     height: 237px;
 
     background-color: rgba(17, 17, 17, 0.7);
-    //background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) );
 
     top: 0;
     left: 0;
