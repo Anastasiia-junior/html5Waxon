@@ -102,4 +102,16 @@
   .benefits__item:hover::after {
     background-color: #c7b299; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .benefits {
+    width: 100%;
+    padding: 20px 30px; }
+
+  .benefits__list {
+    flex-wrap: wrap; }
+
+  .benefits__item {
+    width: 248px;
+    margin: 0 0 20px 0; } }
+
 /*# sourceMappingURL=benefits.css.map */

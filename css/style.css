@@ -485,6 +485,17 @@
   .benefits__item:hover::after {
     background-color: #c7b299; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .benefits {
+    width: 100%;
+    padding: 20px 30px; }
+
+  .benefits__list {
+    flex-wrap: wrap; }
+
+  .benefits__item {
+    width: 248px;
+    margin: 0 0 20px 0; } }
 @font-face {
   font-family: 'montserratbold';
   src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
@@ -1864,5 +1875,9 @@ html {
     background-color: #c7b299; }
   .button:active {
     opacity: 0.5; }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  main {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
