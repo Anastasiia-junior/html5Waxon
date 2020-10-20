@@ -82,3 +82,9 @@
 .video-play-btn--hide {
     display: none;
 }
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .bg-video {
+        display: none;
+    }
+}

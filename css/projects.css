@@ -217,9 +217,6 @@
     transform: scale(1.2); }
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .aside {
-    display: none; }
-
   .projects {
     width: 100%;
     padding: 20px 30px; }
