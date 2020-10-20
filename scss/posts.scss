@@ -5,6 +5,7 @@
     width: $container;
     margin: 0 auto;
     padding: 80px 30px;
+    box-sizing: border-box;
 }
 
 .posts__title {
@@ -16,6 +17,7 @@
     letter-spacing: normal;
     line-height: normal;
     text-align: center;
+    box-sizing: border-box;
 
     margin: 0 auto 30px auto;
 }
@@ -229,5 +231,24 @@
         &:active svg {
             opacity: 0.5;
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .posts {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .posts__text {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .post {
+        margin: 0 0 20px 0;
+    }
+    .posts__controls {
+        display: none;
     }
 }
