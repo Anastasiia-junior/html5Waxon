@@ -33,3 +33,20 @@
         opacity: 0.5;
     }
 }
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .partners {
+        width: 100%;
+        padding: 20px 30px;
+        background-size: cover;
+    }
+
+    .partners__list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .partners__link {
+        margin: 0 0 20px 0;
+    }
+}
