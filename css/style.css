@@ -142,6 +142,9 @@
   .main-logo .main-logo-svg {
     fill: #ffffff; }
 
+.burger-menu, #burger-menu {
+  display: none; }
+
 .main-nav {
   box-sizing: border-box; }
 
@@ -285,7 +288,7 @@
 
 .pagination {
   width: 100%;
-  margin: 300px auto 0 auto;
+  margin: 327px auto 0 auto;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -315,6 +318,69 @@
     border: 2px solid #d3c1ad;
     transform: scale(1.2); }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .main-header {
+    width: 100%;
+    padding: 0 30px;
+    background-size: cover;
+    background-position: center; }
+
+  .header-nav {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+    flex-wrap: wrap; }
+
+  .burger-menu {
+    display: block; }
+    .burger-menu span {
+      display: block;
+      margin: 7px 0;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+    .burger-menu::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+    .burger-menu::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+
+  .main-nav {
+    visibility: hidden;
+    height: 0px; }
+
+  input[type="checkbox"]:checked ~ .main-nav {
+    visibility: visible;
+    height: auto;
+    width: 100%;
+    margin: 20px 0 0 0; }
+
+  .main-nav__list {
+    flex-direction: column;
+    width: 100%; }
+
+  .main-nav__item {
+    width: 100%;
+    background-color: #555555;
+    border-bottom: 3px solid black; }
+
+  .main-nav__link {
+    padding: 20px 0;
+    text-align: center; }
+
+  .slider {
+    display: none; }
+
+  .header__form,
+  .cart {
+    display: none; } }
 @font-face {
   font-family: 'montserratbold';
   src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
@@ -614,14 +680,12 @@
     font-weight: 300;
     color: #8c8c8c; }
   .projects a {
-    margin: 0 auto;
-    width: max-content; }
+    margin: 0 auto; }
 
 .projects-filter__list {
   list-style: none;
   display: flex;
-  width: 757px;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box; }
@@ -631,9 +695,11 @@
   border-radius: 3px;
   outline: none;
   background-color: #ffffff;
-  padding: 10px 25px;
-  margin: 0 0 40px 0;
+  padding: 5px 20px;
+  margin: 0 10px 40px 0;
   box-sizing: border-box;
+  width: max-content;
+  text-align: center;
   font-family: "montserratlight";
   font-size: 14px;
   line-height: 21px;
@@ -825,7 +891,7 @@
   width: 552px;
   position: absolute;
   top: 31%;
-  left: 38%;
+  left: 36%;
   color: #ffffff;
   text-align: center; }
   .bg-video__text .bg-video__title {
@@ -958,7 +1024,7 @@
   box-sizing: border-box; }
 
 .details__list {
-  margin: 0 0 0 100px;
+  margin: 0 0 0 82px;
   padding: 0;
   width: 546px;
   color: #8c8c8c;
@@ -1038,7 +1104,7 @@
   width: 1230px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   padding: 0 30px 0 30px; }
 
@@ -1046,6 +1112,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 88px 0 0;
   font-family: "montserratregular";
   font-size: 48px;
   font-weight: 400;
@@ -1054,6 +1121,8 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff; }
+  .features__item:last-child {
+    margin: 0; }
   .features__item svg {
     fill: #c7b299;
     margin: 0 0 30px 0; }
@@ -1159,13 +1228,16 @@
 .posts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 0 40px 0; }
 
 .post {
   width: 370px;
   border: 1px solid #f8f8f8;
+  margin: 0 30px 0 0;
   position: relative; }
+  .post:last-child {
+    margin: 0; }
   .post:hover {
     background-color: #362f2d; }
   .post:hover .hover-wrapper {
@@ -1228,7 +1300,8 @@
     display: block;
     margin: 0 0 30px 0;
     width: 370px;
-    height: 220px; }
+    height: 220px;
+    box-sizing: border-box; }
 
 .img-caption {
   display: block;
@@ -1746,6 +1819,11 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+main {
+  width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
 a {
   text-decoration: none; }
 
@@ -1771,14 +1849,17 @@ html {
 .button {
   background-color: #998675;
   display: block;
-  padding: 20px 50px;
+  box-sizing: border-box;
+  width: 170px;
+  padding: 14px;
   border-radius: 3px;
   font-family: "raleway-bold";
   font-size: 14px;
   line-height: 23px;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .button:hover {
     background-color: #c7b299; }
   .button:active {

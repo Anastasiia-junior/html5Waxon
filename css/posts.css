@@ -81,13 +81,16 @@
 .posts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 0 40px 0; }
 
 .post {
   width: 370px;
   border: 1px solid #f8f8f8;
+  margin: 0 30px 0 0;
   position: relative; }
+  .post:last-child {
+    margin: 0; }
   .post:hover {
     background-color: #362f2d; }
   .post:hover .hover-wrapper {
@@ -150,7 +153,8 @@
     display: block;
     margin: 0 0 30px 0;
     width: 370px;
-    height: 220px; }
+    height: 220px;
+    box-sizing: border-box; }
 
 .img-caption {
   display: block;

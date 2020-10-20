@@ -91,6 +91,9 @@
   .main-logo .main-logo-svg {
     fill: #ffffff; }
 
+.burger-menu, #burger-menu {
+  display: none; }
+
 .main-nav {
   box-sizing: border-box; }
 
@@ -234,7 +237,7 @@
 
 .pagination {
   width: 100%;
-  margin: 300px auto 0 auto;
+  margin: 327px auto 0 auto;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -263,5 +266,69 @@
     background-color: transparent;
     border: 2px solid #d3c1ad;
     transform: scale(1.2); }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .main-header {
+    width: 100%;
+    padding: 0 30px;
+    background-size: cover;
+    background-position: center; }
+
+  .header-nav {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+    flex-wrap: wrap; }
+
+  .burger-menu {
+    display: block; }
+    .burger-menu span {
+      display: block;
+      margin: 7px 0;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+    .burger-menu::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+    .burger-menu::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff; }
+
+  .main-nav {
+    visibility: hidden;
+    height: 0px; }
+
+  input[type="checkbox"]:checked ~ .main-nav {
+    visibility: visible;
+    height: auto;
+    width: 100%;
+    margin: 20px 0 0 0; }
+
+  .main-nav__list {
+    flex-direction: column;
+    width: 100%; }
+
+  .main-nav__item {
+    width: 100%;
+    background-color: #555555;
+    border-bottom: 3px solid black; }
+
+  .main-nav__link {
+    padding: 20px 0;
+    text-align: center; }
+
+  .slider {
+    display: none; }
+
+  .header__form,
+  .cart {
+    display: none; } }
 
 /*# sourceMappingURL=header.css.map */
