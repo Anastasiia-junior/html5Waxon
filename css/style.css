@@ -146,7 +146,8 @@
   display: none; }
 
 .main-nav {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: block; }
 
 .main-nav__list {
   padding: 0;
@@ -331,6 +332,9 @@
     margin: 0;
     flex-wrap: wrap; }
 
+  .main-logo {
+    margin: 0; }
+
   .burger-menu {
     display: block; }
     .burger-menu span {
@@ -354,7 +358,8 @@
 
   .main-nav {
     visibility: hidden;
-    height: 0px; }
+    height: 0px;
+    width: 100%; }
 
   input[type="checkbox"]:checked ~ .main-nav {
     visibility: visible;
@@ -494,7 +499,7 @@
     flex-wrap: wrap; }
 
   .benefits__item {
-    width: 248px;
+    width: auto;
     margin: 0 0 20px 0; } }
 @font-face {
   font-family: 'montserratbold';
@@ -1077,17 +1082,21 @@
   .details {
     width: 100%;
     padding: 20px 30px;
-    background-size: contain; }
+    background-size: cover;
+    background-color: #c7b299;
+    background-blend-mode: screen; }
 
   .details__title,
   .details__text {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    color: #555555; }
 
   .details__list {
     width: 100%;
     text-align: left;
-    margin: 0 0 0 5%; } }
+    margin: 0 0 0 5%;
+    color: #555555; } }
 @font-face {
   font-family: 'montserratbold';
   src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
@@ -1203,10 +1212,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
 
   .features__item {
-    width: calc(100% / 3);
+    min-width: 135px;
     margin: 0 0 30px 0; } }
 @font-face {
   font-family: 'montserratbold';
@@ -1292,7 +1302,6 @@
 
 .posts__wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 40px 0; }
 
@@ -1448,6 +1457,9 @@
     width: 100%;
     box-sizing: border-box; }
 
+  .posts__wrapper {
+    flex-wrap: wrap; }
+
   .post {
     margin: 0 0 20px 0; }
 
@@ -1538,7 +1550,8 @@
 
   .partners__list {
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    justify-content: space-around; }
 
   .partners__link {
     margin: 0 0 20px 0; } }
@@ -1899,6 +1912,21 @@
   .main-footer__design-link:active {
     opacity: 0.5; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .main-footer__content {
+    display: none; }
+
+  .main-footer__bottom {
+    width: 100%;
+    padding: 20px 30px; }
+
+  .main-footer__bottom-wrapper {
+    width: 100%;
+    padding: 0;
+    justify-content: center; }
+
+  .main-footer__policy-list {
+    margin: 0 0 20px 0; } }
 body {
   margin: 0;
   padding: 0;
@@ -1963,20 +1991,5 @@ html {
 
   .aside {
     display: none; } }
-@media (min-width: 320px) and (max-width: 576px) {
-  .main-footer__content {
-    display: none; }
-
-  .main-footer__bottom {
-    width: 100%;
-    padding: 20px 30px; }
-
-  .main-footer__bottom-wrapper {
-    width: 100%;
-    padding: 0;
-    justify-content: center; }
-
-  .main-footer__policy-list {
-    margin: 0 0 20px 0; } }
 
 /*# sourceMappingURL=style.css.map */

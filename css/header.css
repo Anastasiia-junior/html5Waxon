@@ -95,7 +95,8 @@
   display: none; }
 
 .main-nav {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: block; }
 
 .main-nav__list {
   padding: 0;
@@ -280,6 +281,9 @@
     margin: 0;
     flex-wrap: wrap; }
 
+  .main-logo {
+    margin: 0; }
+
   .burger-menu {
     display: block; }
     .burger-menu span {
@@ -303,7 +307,8 @@
 
   .main-nav {
     visibility: hidden;
-    height: 0px; }
+    height: 0px;
+    width: 100%; }
 
   input[type="checkbox"]:checked ~ .main-nav {
     visibility: visible;

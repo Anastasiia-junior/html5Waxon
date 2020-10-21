@@ -61,6 +61,7 @@
 
 .main-nav {
     box-sizing: border-box;
+    display: block;
 }
 
 .main-nav__list {
@@ -310,6 +311,11 @@
         padding: 40px 0;
         margin: 0;
         flex-wrap: wrap;
+        //justify-content: space-between;
+    }
+
+    .main-logo {
+        margin: 0;
     }
 
     .burger-menu {
@@ -340,6 +346,7 @@
     .main-nav {
         visibility: hidden;
         height: 0px;
+        width: 100%;
     }
 
     input[type="checkbox"]:checked ~ .main-nav {

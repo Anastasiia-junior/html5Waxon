@@ -9,7 +9,7 @@
     
     background-image: url(../img/iphone_in_hand_10962.jpg);
     background-repeat: no-repeat;
-    background-position: 25% bottom;
+    background-position:  25% bottom;
     background-size: auto;
 }
 
@@ -67,8 +67,9 @@
     .details {
         width: 100%;
         padding: 20px 30px;
-        background-size: contain;
-        //background-blend-mode: screen;
+        background-size: cover;
+        background-color: $hover-color;
+        background-blend-mode: screen;
     }
 
 
@@ -76,11 +77,13 @@
     .details__text {
         width: 100%;
         text-align: center;
+        color: #555555;
     }
 
     .details__list {
         width: 100%;
         text-align: left;
         margin: 0 0 0 5%;
+        color: #555555;
     }
 }

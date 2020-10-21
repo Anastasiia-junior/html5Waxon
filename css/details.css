@@ -108,16 +108,20 @@
   .details {
     width: 100%;
     padding: 20px 30px;
-    background-size: contain; }
+    background-size: cover;
+    background-color: #c7b299;
+    background-blend-mode: screen; }
 
   .details__title,
   .details__text {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    color: #555555; }
 
   .details__list {
     width: 100%;
     text-align: left;
-    margin: 0 0 0 5%; } }
+    margin: 0 0 0 5%;
+    color: #555555; } }
 
 /*# sourceMappingURL=details.css.map */

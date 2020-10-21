@@ -39,7 +39,6 @@
 
 .posts__wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0 0 40px 0;
 }
@@ -243,6 +242,10 @@
     .posts__text {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .posts__wrapper {
+        flex-wrap: wrap;
     }
 
     .post {

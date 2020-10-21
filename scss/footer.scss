@@ -419,3 +419,24 @@
         opacity: 0.5;
     }
 }
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .main-footer__content {
+        display: none;
+    }
+
+    .main-footer__bottom {
+        width: 100%;
+        padding: 20px 30px;   
+    }
+
+    .main-footer__bottom-wrapper {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .main-footer__policy-list {
+        margin: 0 0 20px 0;
+    }
+}
