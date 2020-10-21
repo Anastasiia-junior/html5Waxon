@@ -204,6 +204,18 @@
         top: 5px;
         left: 113px;
     }
+
+    &:hover {
+        font-size: 1.2em;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
 }
 
 .posts__controls {

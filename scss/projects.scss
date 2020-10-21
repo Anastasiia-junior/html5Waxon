@@ -204,6 +204,9 @@
         cursor: pointer;
         transform: scale(1.2);
     }
+    &:active {
+        opacity: 0.5;
+    }
 }
 .hover-lupa {
     background-image: url(../img/lupa-hover.svg);
@@ -215,6 +218,9 @@
     &:hover {
         cursor: pointer;
         transform: scale(1.2);
+    }
+    &:active {
+        opacity: 0.5;
     }
 }
 

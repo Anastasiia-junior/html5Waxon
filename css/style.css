@@ -827,6 +827,8 @@
   .hover-link:hover {
     cursor: pointer;
     transform: scale(1.2); }
+  .hover-link:active {
+    opacity: 0.5; }
 
 .hover-lupa {
   background-image: url(../img/lupa-hover.svg);
@@ -837,6 +839,8 @@
   .hover-lupa:hover {
     cursor: pointer;
     transform: scale(1.2); }
+  .hover-lupa:active {
+    opacity: 0.5; }
 
 @media (min-width: 320px) and (max-width: 576px) {
   .projects {
@@ -1425,6 +1429,12 @@
     height: 8px;
     top: 5px;
     left: 113px; }
+  .post__link:hover {
+    font-size: 1.2em; }
+    .post__link:hover::after {
+      display: none; }
+  .post__link:active {
+    opacity: 0.5; }
 
 .posts__controls {
   display: flex;

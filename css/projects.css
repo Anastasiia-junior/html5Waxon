@@ -205,6 +205,8 @@
   .hover-link:hover {
     cursor: pointer;
     transform: scale(1.2); }
+  .hover-link:active {
+    opacity: 0.5; }
 
 .hover-lupa {
   background-image: url(../img/lupa-hover.svg);
@@ -215,6 +217,8 @@
   .hover-lupa:hover {
     cursor: pointer;
     transform: scale(1.2); }
+  .hover-lupa:active {
+    opacity: 0.5; }
 
 @media (min-width: 320px) and (max-width: 576px) {
   .projects {

@@ -205,6 +205,12 @@
     height: 8px;
     top: 5px;
     left: 113px; }
+  .post__link:hover {
+    font-size: 1.2em; }
+    .post__link:hover::after {
+      display: none; }
+  .post__link:active {
+    opacity: 0.5; }
 
 .posts__controls {
   display: flex;
