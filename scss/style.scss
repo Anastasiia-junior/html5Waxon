@@ -1,0 +1,101 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+
+@import "header.scss";
+@import "benefits.scss";
+@import "aside.scss";
+@import "projects.scss";
+@import "video.scss";
+@import "details.scss";
+@import "features.scss";
+@import "posts.scss";
+@import "partners.scss";
+@import "footer.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "raleway", "Open Sans", "sans-serif";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $font-color;
+    background-color: $background-color;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+main {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    background-color: $background-color--buton;
+    display: block;
+    box-sizing: border-box;
+    width: 170px;
+    padding: 14px;
+    border-radius: 3px;
+
+    font-family: "raleway-bold";
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 700;
+    color: $background-color;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    main {
+        width: 100%;
+    }
+    .aside {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

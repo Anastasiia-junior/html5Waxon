@@ -1,0 +1,86 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+.benefits {
+    width: $container;
+    margin: 0 auto ;
+    padding: 80px 30px 80px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.benefits__list {
+    width: inherit;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits__item {
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+
+    .benefits__icon {
+        fill: #555555;
+        margin: 0 0 30px 0;
+    }
+
+    .benefits__title {
+        font-family: "raleway-bold";
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #555555;
+        margin: 0 0 20px 0;
+    }
+
+    .benefits__text {
+        font-family: "montserratlight";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #8c8c8c;
+        margin: 0 0 30px 0;
+    }
+
+    &::after {
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+    }
+
+    &:hover .benefits__icon {
+        fill: $hover-color;
+    }
+    &:hover .benefits__title {
+        color: $hover-color;
+    }
+    &:hover::after {
+        background-color: $hover-color;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .benefits {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+    .benefits__list {
+        flex-wrap: wrap;
+    }
+
+    .benefits__item {
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+}

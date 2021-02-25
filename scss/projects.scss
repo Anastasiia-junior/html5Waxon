@@ -1,0 +1,249 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+.projects {
+    width: $container;
+    margin: 0 auto;
+    padding: 80px 30px 80px 30px;
+    box-sizing: border-box;
+
+    a {
+        margin: 0 auto;
+    }
+}
+
+.projects__title {
+    margin: 0 0 24px 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-family: "raleway-semibold";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+
+.projects__text {
+    width: 757px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+
+    font-family: "montserratlight";
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.projects-filter__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects-filter__button {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    outline: none;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    margin: 0 10px 40px 0;
+    box-sizing: border-box;
+
+    width: max-content;
+    text-align: center;
+
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #8c8c8c;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $hover-color;
+        color: #ffffff;
+        border: 1px solid $hover-color;
+        box-sizing: border-box;
+    }
+    &:active {
+        background-color: $background-color--buton;
+        color: #ffffff;
+        border: none;
+    }
+
+    &.filter-active{
+        border: none;
+        background-color: $background-color--buton;
+        color: #ffffff;
+        cursor: auto;
+    }
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__card {
+    width: 370px;
+    box-sizing: border-box;
+    margin: 0 30px 30px 0;
+
+    position: relative;
+
+    &:nth-child(3n) {
+        margin: 0 0 30px 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 30px 0 30px 30px;
+        background-color: #fbfaf8;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 10px solid #fbfaf8;
+            top: -10px;
+            left: 19px;
+        }
+    }
+
+    &:hover p {
+        background-color: #362f2d;
+        &:before {
+            border-bottom: 10px solid #362f2d;
+        }
+    }
+    &:hover .card-title {
+        color: #ffffff;
+    }
+    &:hover .card-text {
+        color: #c7b299;
+    }
+
+    &:hover .projects__card--hover {
+        display: block;
+    }
+}
+
+.card__pic {
+    display: block;
+    width: 370px;
+    height: 237px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    display: block;
+
+    font-family: "raleway-medium";
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+
+    margin: 0 0 14px 0;
+}
+
+.card-text {
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+.projects__card--hover {
+    display: none;
+    position: absolute;
+
+    width: 370px;
+    height: 237px;
+
+    background-color: rgba(17, 17, 17, 0.7);
+
+    top: 0;
+    left: 0;
+
+    .hover-button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 26px;
+        height: 26px;
+        box-sizing: border-box;
+    }
+}
+
+
+
+.hover-link {
+    background-image: url(../img/link-hover.svg);
+    background-repeat: no-repeat;
+    margin: 0 25px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 36%;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+.hover-lupa {
+    background-image: url(../img/lupa-hover.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    .projects {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .projects__text {
+        width: 100%;
+    }
+
+    .projects-filter__list {
+        flex-wrap: wrap;
+    }
+
+    .cards-wrapper {
+        justify-content: center;
+    }
+
+    .projects__card {
+        margin: 0 0 20px 0;
+    }
+}

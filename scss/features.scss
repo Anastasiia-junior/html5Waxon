@@ -1,0 +1,94 @@
+
+@import "fonts.scss";
+@import "variables.scss";
+
+
+.features {
+    width: 1920px;
+    background-color: #211b19;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 69px 0 70px 0;
+}
+
+.features__list {
+    width: $container;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 88px 0 0;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    font-family: "montserratregular";
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+
+    svg {
+        fill: #c7b299;
+        margin: 0 0 30px 0;
+    }
+
+    span {
+        display: block;
+        color: #c7b299;
+        font-family: "montserratlight";
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 30px 0;
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    
+    .features {
+        width: 100%;
+        padding: 20px 30px 0 30px;
+    }
+
+    .features__list {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .features__item {
+        min-width: 135px;
+        margin: 0 0 30px 0;
+    }
+}
